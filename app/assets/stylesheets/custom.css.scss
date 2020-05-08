@@ -1,2 +1,71 @@
+
+
 @import 'bootstrap/dist/css/bootstrap';
+
+.center {
+	text-align: center;
+}
+.grid {
+	display: block;
+	padding: 30px 0;
+}
+/* Navigation */
+
+#logo {
+	float: left;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+#logo:hover {
+	color: #adaaa9;
+	text-decoration: none;
+}
+
+/* Footer */
+.primary-footer {
+	background: #343a40;
+	color: #fff;
+	height: 80px;
+	margin: 24px 0 20px 0;
+	
+}
+.primary-footer a {
+    color: #9a9da0;
+	text-decoration: none;
+}
+.primary-footer a:hover {
+	color: #dadde0;
+}
+
+/* Home Page */
+
+.jumbotron {
+	background-image: asset-url("cover-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+.jumbotron h1, h2 {
+	color: #fff;
+    text-align: center;
+    margin-botton: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.col-md-4 h2 {
+	color: #000;
+}
+
+/* Buttons */
+.btn-xlarge {
+	background-color: #343a40;
+	border: 1px solid green;
+}
+.btn-xlarge:hover {
+	color: #fff;
+	text-decoration: none;
+}
 

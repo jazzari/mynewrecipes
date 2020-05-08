@@ -10,6 +10,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/navigation' %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
+  
+  <footer class="primary-footer">
+    
+      <p class="center grid">
+        2020 <small>&copy; jazzari</small>    
+        <a href="https://github.com/jazzari">Visit my GitHub</a>
+      </p>
+
+  </footer>
 </html>
