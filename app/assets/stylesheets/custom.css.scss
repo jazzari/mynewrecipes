@@ -6,9 +6,13 @@
 	text-align: center;
 }
 .grid {
-	display: block;
-	padding: 30px 0;
+    display: inline-block;
+	padding-top: 30px;
 }
+.right {
+	text-align: right;
+}
+
 /* Navigation */
 
 #logo {
@@ -34,6 +38,7 @@
 }
 .primary-footer a {
     color: #9a9da0;
+
 	text-decoration: none;
 }
 .primary-footer a:hover {
@@ -48,7 +53,14 @@
 	background-size: cover;
 	height: 300px;
 }
-.jumbotron h1, h2 {
+.jumbotron h1 {
+	color: #fff;
+    text-align: center;
+    margin-botton: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.jumbotron h2 {
 	color: #fff;
     text-align: center;
     margin-botton: 30px;
