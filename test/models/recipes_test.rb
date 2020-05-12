@@ -4,7 +4,14 @@ class RecipeTest < ActiveSupport::TestCase
 
     # Create an instance variable to do all the tests
 	def setup
-		@recipe = Recipe.new(name: "vegetable", description: "great vegetable recipe")
+		@chef = Chef.create!(chefname: "mashrur", email: "mashrur@example.com")
+		@recipe = @chef.recipes.build(name: "vegetable",  
+			          description: "great vegetable recipe")
+	end
+
+	test "recipe without chef should be invalid" do 
+		@recipe.chef_id = nil
+		assert_not @recipe.valid?
 	end
 
 	test "recipe should be valid" do 
