@@ -4,7 +4,8 @@ class RecipeTest < ActiveSupport::TestCase
 
     # Create an instance variable to do all the tests
 	def setup
-		@chef = Chef.create!(chefname: "mashrur", email: "mashrur@example.com")
+		@chef = Chef.create!(chefname: "mashrur", email: "mashrur@example.com",
+			    password: "password", password_confirmation: "password")
 		@recipe = @chef.recipes.build(name: "vegetable",  
 			          description: "great vegetable recipe")
 	end
